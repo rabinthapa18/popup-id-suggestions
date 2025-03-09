@@ -44,7 +44,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 ### input field to be processed
 
 ```html
-<input type=“number” class=“popup-id-suggestions” placeholder=“Article ID”>
+<input type="number" class="popup-id-suggestions" placeholder="Article ID">
 ```
 
 - `number` type.
