@@ -56,6 +56,15 @@ const popup = new PopupSuggestion("path/to/data.json");
 
 - `path/to/data.json` を実際の JSON データの URL またはファイルパスに置き換えてください。
 
+### 処理対象の入力フィールド
+
+```html
+<input type="number" class="popup-id-suggestions" placeholder="原稿ID">
+```
+
+- `number` タイプを指定する。
+- `popup-id-suggestions` クラスを指定する。
+
 ### JSON データの例
 
 ```json

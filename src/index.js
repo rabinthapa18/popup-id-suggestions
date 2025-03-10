@@ -104,7 +104,9 @@ class PopupSuggestion {
   }
 
   isNumberKey(event, activeElement) {
-    return !isNaN(event.key) && activeElement.tagName === "INPUT";
+    return !isNaN(event.key)
+      && activeElement.tagName === "INPUT"
+      && activeElement.classList.contains("popup-id-suggestions");
   }
 
   showPopup(activeElement, number) {

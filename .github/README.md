@@ -56,6 +56,15 @@ const popup = new PopupSuggestion("path/to/data.json");
 
 - `path/to/data.json` should be replaced with the actual URL or file path where your JSON data is stored.
 
+### input field to be processed
+
+```html
+<input type="number" class="popup-id-suggestions" placeholder="Article ID">
+```
+
+- `number` type.
+- Specifies the `popup-id-suggestions` class.
+
 ### Example JSON Format
 
 ```json
