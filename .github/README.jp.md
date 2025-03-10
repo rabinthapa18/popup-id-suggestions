@@ -31,6 +31,21 @@
 </script>
 ```
 
+```html
+<script type="module">
+  import PopupSuggestion from "./PopupSuggestion.js";
+
+  const popup = new PopupSuggestion("https://api.example.com/data.json", {
+    fontSize: "14px",
+    zIndex: "1500",
+    width: "320px",
+    headers: {
+      Authorization: "Bearer hogefuga1234",
+    },
+  });
+</script>
+```
+
 ## 使用方法
 
 ### 基本設定
@@ -69,6 +84,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 | `height`          | string  | "200px"                    | ポップアップの最大高さ                                   |
 | `textOverflow`    | string  | "wrap"                     | テキストのオーバーフロー処理（"wrap" または "ellipsis"） |
 | `showBorders`     | boolean | `true`                     | アイテム間の境界線を表示するか                           |
+| `headers`         | object  | {}                         | HTTP リクエストヘッダ |
 
 ## キーボードショートカット
 

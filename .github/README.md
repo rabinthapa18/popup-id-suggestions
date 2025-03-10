@@ -31,6 +31,21 @@ This package is not available via npm. Instead, you can download the script from
 </script>
 ```
 
+```html
+<script type="module">
+  import PopupSuggestion from "./PopupSuggestion.js";
+
+  const popup = new PopupSuggestion("https://api.example.com/data.json", {
+    fontSize: "14px",
+    zIndex: "1500",
+    width: "320px",
+    headers: {
+      Authorization: "Bearer hogefuga1234",
+    },
+  });
+</script>
+```
+
 ## Usage
 
 ### Basic Setup
@@ -69,6 +84,7 @@ You can customize the popup by passing an options object when initializing the c
 | `height`          | string  | "200px"                      | Maximum height of the popup                            |
 | `textOverflow`    | string  | "wrap"                       | Controls text overflow behavior ("wrap" or "ellipsis") |
 | `showBorders`     | boolean | `true`                       | Whether to show item dividers                          |
+| `headers`         | object  | {}                           | HTTP Request Headers                                   |
 
 ## Keyboard Shortcuts
 
