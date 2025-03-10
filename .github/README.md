@@ -1,4 +1,4 @@
-# PopupSuggestion
+# PopupIdSuggestion
 
 **PopupSuggestion** is a lightweight JavaScript class that provides an interactive popup suggestion box based on user input. It is designed to work with numeric input fields and fetches data from a specified JSON file.
 
@@ -59,7 +59,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 ### input field to be processed
 
 ```html
-<input type="number" class="popup-id-suggestions" placeholder="Article ID">
+<input type="number" class="popup-id-suggestions" placeholder="Article ID" />
 ```
 
 - `number` type.
@@ -118,6 +118,7 @@ You can customize the popup by passing an options object when initializing the c
 ## License
 
 This script is open-source and available for personal and commercial use.
+This package is licensed under the MIT License.
 
 ---
 

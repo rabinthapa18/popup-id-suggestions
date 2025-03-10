@@ -1,4 +1,4 @@
-# PopupSuggestion
+# PopupIdSuggestion
 
 **PopupSuggestion** は、ユーザー入力に基づいてインタラクティブなポップアップ候補ボックスを提供する軽量な JavaScript クラスです。数値入力フィールドで動作し、指定された JSON ファイルからデータを取得します。
 
@@ -59,7 +59,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 ### 処理対象の入力フィールド
 
 ```html
-<input type="number" class="popup-id-suggestions" placeholder="原稿ID">
+<input type="number" class="popup-id-suggestions" placeholder="原稿ID" />
 ```
 
 - `number` タイプを指定する。
@@ -93,7 +93,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 | `height`          | string  | "200px"                    | ポップアップの最大高さ                                   |
 | `textOverflow`    | string  | "wrap"                     | テキストのオーバーフロー処理（"wrap" または "ellipsis"） |
 | `showBorders`     | boolean | `true`                     | アイテム間の境界線を表示するか                           |
-| `headers`         | object  | {}                         | HTTP リクエストヘッダ |
+| `headers`         | object  | {}                         | HTTP リクエストヘッダ                                    |
 
 ## キーボードショートカット
 
@@ -118,6 +118,7 @@ const popup = new PopupSuggestion("path/to/data.json");
 ## ライセンス
 
 このスクリプトはオープンソースであり、個人および商用利用が可能です。
+このパッケージは MIT ライセンスの下で提供されています。
 
 ---
 
